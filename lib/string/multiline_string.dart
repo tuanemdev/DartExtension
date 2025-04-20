@@ -1,9 +1,12 @@
-extension StringExtension on String {
+
+extension MultilineStringTrimmer on String {
+  /// Trims leading whitespace from each line of a multiline string.</br>
+  /// Last line must contain only space and tab.</br>
+  /// refer: https://github.com/dart-lang/language/issues/559
   String trimLeadingWhitespace() {
-    // Last line must contain only space and tab.
     int lastLineStart = length;
     int char = 0;
-    while (lastLineStart > 0 && (char = codeUnitAt(lastLineStart - 1) == 0x20) || char == 0x09) {
+    while (lastLineStart > 0 && (char = codeUnitAt(lastLineStart - 1)) == 0x20 || char == 0x09) {
       lastLineStart--;
     }
     if (lastLineStart == 0) return "";
