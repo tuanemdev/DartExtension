@@ -1,39 +1,43 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Dart Extensions
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+A collection of useful extension functions for Dart language to enhance productivity and code readability. This package provides convenient extensions that add functionality to existing Dart types without modifying their original implementation.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add the dependency to your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  dart_extension: ^0.0.1
+```
+
+Then import the specific extensions you need in your Dart file.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+The package is organized into categories of extensions for different Dart types. Import only what you need to keep your dependencies minimal.
 
 ```dart
-const like = 'sample';
+import 'package:dart_extension/string/string.dart'
+
+void main() {
+  final multilineStringContent = """
+  * foo.
+  * bar
+      - baz
+  * qux
+  """;
+  final trimmed = multilineStringContent.trimLeadingWhitespace()
+}
 ```
+
+Each extension is designed to be intuitive and follows Dart's standard naming conventions.
+
+For detailed examples, see the documentation comments in the source code.
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+- Licensed under MIT
+- Contributions are welcome! Feel free to submit issues or pull requests
+- For more detailed documentation on specific extensions, see the API reference
+- This package is compatible with both Dart and Flutter projects
