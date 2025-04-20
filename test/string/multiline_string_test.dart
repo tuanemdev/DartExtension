@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:dart_extension/string/multiline_string.dart';
+import 'package:darty_x/string/multiline_string.dart';
 
 void main() {
   final testStringContent = """

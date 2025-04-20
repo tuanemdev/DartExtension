@@ -1,7 +1,7 @@
-name: dart_extension
+name: darty_x
 description: "A collection of useful extension functions for Dart language to enhance productivity and code readability."
 version: 0.0.1
-homepage:
+repository: https://github.com/tuanemdev/DartExtension
 
 environment:
   sdk: ^3.7.2
