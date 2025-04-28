@@ -10,7 +10,7 @@ Add the dependency to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  darty_x: ^0.0.1
+  darty_x: ^0.0.2
 ```
 
 Then import the specific extensions you need in your Dart file.
